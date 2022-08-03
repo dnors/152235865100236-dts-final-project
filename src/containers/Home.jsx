@@ -2,7 +2,6 @@ import { Box, Divider, Typography } from "@mui/material";
 import { Fragment } from "react";
 import Body from "../components/Body";
 import PhoneCarousel from "../components/carousel/PhoneCarousel";
-import Item from "../components/carousel/Item";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Main from "../components/Main";
