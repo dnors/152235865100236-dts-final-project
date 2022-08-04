@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Box, Card, CardContent, Divider, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Divider, Typography } from "@mui/material";
 
 const Item = ({ data }) => {
     const navigate = useNavigate();
@@ -7,14 +7,15 @@ const Item = ({ data }) => {
     return (
         <Card
             sx={{ cursor: 'pointer', bgcolor: '#ffffff' }}
-            onClick={() => navigate(`/${data.brand_slug}`)}
-        >
+            onClick={() => navigate(`/phone-detail/${data.slug}`)}
+        >   
+            <CardMedia
+                component="img"
+                height="400"
+                image={`${data.image}`}
+                alt="phone background"
+            />
             <CardContent>
-                <img
-                    src={`${data.image}`}
-                    alt="phone image"
-                    className="PhoneListItem-img"
-                />
                 <Box>
                     <Divider sx={{ marginY: 0.2 }} />
                     <Typography variant="body1" noWrap> {data.phone_name} </Typography>

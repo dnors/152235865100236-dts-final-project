@@ -57,7 +57,7 @@ function App() {
             }
           />
           <Route
-            path="/movie/:id"
+            path="/phone-detail/:phone_slug"
             element={
               <AuthBackend>
                 <PhoneData />

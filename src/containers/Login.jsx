@@ -61,7 +61,7 @@ const Registration = () => {
 													fullWidth
 													variant="filled"
 													label="Password"
-													sx={{ input: { color: 'white' } }}
+													sx={{ input: { color: 'gray' } }}
 													type="password"
 													onChange={(e) => setField((s) => ({ ...s, password: e.target.value }))}
 												/>

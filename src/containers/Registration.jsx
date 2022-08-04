@@ -24,11 +24,11 @@ const Registration = () => {
 		try {
 			const user = await createUserWithEmailAndPassword(auth, field.email, field.password);
 			if (user) {
-				enqueueSnackbar('Hallo, Selamat datang', { variant: 'success' });
+				enqueueSnackbar('Login Sukses, Selamat datang', { variant: 'success' });
 				navigate("/home");
 			}
 		} catch (error) {
-			enqueueSnackbar('Oops, periksa kembali atau gunakan email lain', { variant: 'info' });
+			enqueueSnackbar('Oopss, akun telah terdaftar!', { variant: 'info' });
 		}
 	}
 
@@ -62,7 +62,7 @@ const Registration = () => {
 													fullWidth
 													variant="filled"
 													label="Password"
-													sx={{ input: { color: 'white' } }}
+													sx={{ input: { color: 'gray' } }}
 													type="password"
 													onChange={(e) => setField((s) => ({ ...s, password: e.target.value }))}
 												/>

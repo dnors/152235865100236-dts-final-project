@@ -15,7 +15,7 @@ const AuthFrontend = ({ children }) => {
                 // user signed out
             }
         });
-    }, []);
+    });
 
     return (
         <Fragment>
