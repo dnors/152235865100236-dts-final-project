@@ -15,6 +15,7 @@ import Main from "./containers/Main";
 import PhoneData from "./containers/PhoneData";
 import Registration from "./containers/Registration";
 import theme from "./theme/theme";
+import Page404 from "./containers/Page404";
 
 function App() {
   return (
@@ -64,6 +65,7 @@ function App() {
               </AuthBackend>
             }
           />
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </div>
     </ThemeProvider>
