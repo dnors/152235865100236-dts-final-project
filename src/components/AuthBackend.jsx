@@ -15,7 +15,7 @@ const AuthBackend = ({ children }) => {
                 navigate('/login')
             }
         });
-    }, []);
+    });
 
     return (
         <Fragment>
